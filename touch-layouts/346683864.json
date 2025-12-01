@@ -1,0 +1,8 @@
+{
+  "name": "Tom Clancy’s Ghost Recon Wildlands",
+  "product_id": "C2N9CS4FS1QR",
+  "default_layout": "custom",
+  "layouts": [
+    "ghost-recon-wildlands"
+  ]
+}
