@@ -57,7 +57,18 @@
               }
             ],
             null,
-            null,
+            {
+              "type": "button",
+              "action": "rightTrigger",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "fire"
+                  }
+                }
+              }
+            },
             {
               "type": "button",
               "action": "leftTrigger",
@@ -167,44 +178,37 @@
                 }
               },
               {
-                "type": "throttle",
-                "axisUp": "rightTrigger",
-                "axisDown": "leftTrigger",
-                "sticky": true,
+                "type": "button",
+                "action": "rightTrigger",
                 "styles": {
                   "default": {
-                    "knob": {
-                      "faceImage": {
-                        "type": "icon",
-                        "value": "gasPedal"
-                      }
-                    }
-                  },
-                  "activatedDown": {
-                    "knob": {
-                      "faceImage": {
-                        "type": "icon",
-                        "value": "brakePedal"
-                      }
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "gasPedal"
                     }
                   }
                 }
               },
               {
                 "type": "button",
-                "toggle": true,
-                "action": [
-                  "leftTrigger",
-                  {
-                    "type": "layer",
-                    "target": "ADS"
-                  }
-                ],
+                "action": "leftTrigger",
                 "styles": {
                   "default": {
                     "faceImage": {
                       "type": "icon",
-                      "value": "aim"
+                      "value": "brakePedal"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "button",
+                "action": "gamepadX",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "reload"
                     }
                   }
                 }
@@ -224,12 +228,13 @@
             },
             {
               "type": "button",
-              "action": "gamepadX",
+              "toggle": true,
+              "action": "leftTrigger",
               "styles": {
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "reload"
+                    "value": "aim"
                   }
                 }
               }
