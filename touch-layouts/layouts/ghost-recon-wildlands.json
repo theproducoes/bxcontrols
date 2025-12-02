@@ -141,56 +141,30 @@
                 }
               }
             },
-            [
-              {
-                "type": "button",
-                "action": "gamepadB",
-                "styles": {
-                  "default": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "crouch"
-                    }
-                  }
-                }
-              },
-              null,
-              {
-                "type": "throttle",
-                "axisUp": "rightTrigger",
-                "axisDown": "leftTrigger",
-                "styles": {
-                  "default": {
-                    "knob": {
-                      "faceImage": {
-                        "type": "icon",
-                        "value": "gasPedal"
-                      }
-                    }
-                  },
-                  "activatedDown": {
-                    "knob": {
-                      "faceImage": {
-                        "type": "icon",
-                        "value": "brakePedal"
-                      }
-                    }
-                  }
-                }
-              },
-              {
-                "type": "button",
-                "action": "leftThumb",
-                "styles": {
-                  "default": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "sprint"
-                    }
+            {
+              "type": "button",
+              "action": "gamepadB",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "crouch"
                   }
                 }
               }
-            ],
+            },
+            {
+              "type": "button",
+              "action": "leftThumb",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "sprint"
+                  }
+                }
+              }
+            },
             [
               {
                 "type": "button",
@@ -204,8 +178,30 @@
                   }
                 }
               },
-              null,
-              null,
+              {
+                "type": "button",
+                "action": "rightTrigger",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "gasPedal"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "button",
+                "action": "leftTrigger",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "brakePedal"
+                    }
+                  }
+                }
+              },
               {
                 "type": "button",
                 "action": "gamepadX",
