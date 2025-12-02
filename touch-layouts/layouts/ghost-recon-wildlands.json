@@ -30,7 +30,6 @@
             {
               "type": "joystick",
               "action": "rightBumper",
-              "actionThreshold": 0.75,
               "axis": {
                 "input": "axisXY",
                 "output": "leftJoystick",
@@ -44,14 +43,6 @@
                   "knob": {
                     "faceImage": {
                       "type": "icon",
-                      "value": "look"
-                    }
-                  }
-                },
-                "activated": {
-                  "knob": {
-                    "faceImage": {
-                      "type": "icon",
                       "value": "radialMenu"
                     }
                   }
@@ -61,21 +52,15 @@
             null,
             [
               {
-                "type": "directionalPad"
+                "type": "directionalPad",
+                "scale": 1.5
               }
             ],
             null,
             null,
             {
               "type": "button",
-              "toggle": true,
-              "action": [
-                "leftTrigger",
-                {
-                  "type": "layer",
-                  "target": "ADS"
-                }
-              ],
+              "action": "leftTrigger",
               "styles": {
                 "default": {
                   "faceImage": {
@@ -134,19 +119,12 @@
             },
             {
               "type": "button",
-              "toggle": true,
-              "action": [
-                "leftTrigger",
-                {
-                  "type": "layer",
-                  "target": "ADS"
-                }
-              ],
+              "action": "rightTrigger",
               "styles": {
                 "default": {
                   "faceImage": {
                     "type": "icon",
-                    "value": "aim"
+                    "value": "fire"
                   }
                 }
               }
@@ -188,15 +166,45 @@
                   }
                 }
               },
-              null,
+              {
+                "type": "throttle",
+                "axisUp": "rightTrigger",
+                "axisDown": "leftTrigger",
+                "sticky": true,
+                "styles": {
+                  "default": {
+                    "knob": {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "gasPedal"
+                      }
+                    }
+                  },
+                  "activatedDown": {
+                    "knob": {
+                      "faceImage": {
+                        "type": "icon",
+                        "value": "brakePedal"
+                      }
+                    }
+                  }
+                }
+              },
               {
                 "type": "button",
-                "action": "rightTrigger",
+                "toggle": true,
+                "action": [
+                  "leftTrigger",
+                  {
+                    "type": "layer",
+                    "target": "ADS"
+                  }
+                ],
                 "styles": {
                   "default": {
                     "faceImage": {
                       "type": "icon",
-                      "value": "fire"
+                      "value": "aim"
                     }
                   }
                 }
