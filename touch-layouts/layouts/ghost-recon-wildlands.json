@@ -84,6 +84,7 @@
             {
               "type": "button",
               "action": "leftBumper",
+              "toggle": true,
               "styles": {
                 "default": {
                   "faceImage": {
@@ -152,19 +153,19 @@
                 }
               }
             },
-            {
-              "type": "button",
-              "action": "leftThumb",
-              "styles": {
-                "default": {
-                  "faceImage": {
-                    "type": "icon",
-                    "value": "sprint"
+            [
+              {
+                "type": "button",
+                "action": "leftThumb",
+                "styles": {
+                  "default": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "sprint"
+                    }
                   }
                 }
-              }
-            },
-            [
+              },
               {
                 "type": "button",
                 "action": "gamepadA",
@@ -200,20 +201,20 @@
                     }
                   }
                 }
-              },
-              {
-                "type": "button",
-                "action": "gamepadX",
-                "styles": {
-                  "default": {
-                    "faceImage": {
-                      "type": "icon",
-                      "value": "reload"
-                    }
+              }
+            ],
+            {
+              "type": "button",
+              "action": "gamepadX",
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "reload"
                   }
                 }
               }
-            ],
+            },
             {
               "type": "button",
               "action": "rightThumb",
@@ -228,8 +229,8 @@
             },
             {
               "type": "button",
-              "toggle": true,
               "action": "leftTrigger",
+              "toggle": true,
               "styles": {
                 "default": {
                   "faceImage": {
